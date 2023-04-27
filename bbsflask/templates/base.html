@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    {% block meta %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endblock %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-wipe@4.3.0/index.min.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='build/front.css') }}">
+    {% block stylesheet %}{% endblock %}
+  </head>
+  <body>
+  </body>
+</html>
